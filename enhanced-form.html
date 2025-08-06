@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web Technologies Wk2 Assignment: Enhancing HTML5 Content and Mastering Forms">
+  <title>Week 2 Assignment</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>Enhancing HTML5 Content and Mastering Forms</h1>
+    </nav>
+    <hr>
+  </header>
+  <section id="intro">
+    <h2>Main Sections:</h2>
+    <ol>
+      <li>Using lists</li>
+      <li>Tables in HTML5</li>
+      <li>Images, Audio and Videos</li>
+      <li>User Sign Up form</li>
+    </ol>
+  </section>
+  <hr>
+  <section id="lists">
+    <h3>1. Lists</h3>
+    <p>These are the main ways of using lists in HTML5:</p>
+    <dl>
+      <dt>Ordered Lists, od</dt>
+      <dd>Used to list items in an orderely fashion</dd>
+      <dt>Unordered Lists, ul</dt>
+      <dd>Opposite to the ordered lists, display lists in unordered manner</dd>
+      <dt>Description Lists, dl</dt>
+      <dd>Contain a title and the description associated to the title</dd>
+    </dl>
+  </section>
+  <hr>
+  <section id="tables">
+    <h3>2. Tables</h3>
+    <p>With tables, data can be displayed neatly in rows and columns</p>
+    <table border="1">
+      <thead>
+        <tr>
+          <td colspan="2">Web Design Assignment Marks</td>
+        </tr>
+        <tr>
+          <th>Name</th>
+          <th>Marks(out of 40)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dave Odefukwe</td>
+          <td>35</td>
+        </tr>
+        <tr>
+          <td>Victor Mwendwa</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>Anna Wangui</td>
+          <td>35</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <hr>
+  <section id="media">
+    <h3>3. Media</h3>
+    <section id="images">
+      <h4>Images</h4>
+      <p>Adding cool image elements to our webpage</p>
+      <img
+        src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Image of a chill cat" width="200px" height="250px">
+    </section>
+    <section id="audio">
+      <h4>Audio Elements</h4>
+      <p>Adding audio to the page</p>
+      <audio controls>
+        <source src="https://files.catbox.moe/jbqq8w.mp3" type="audio/mp3">
+      </audio>
+      <audio controls>
+        <source src="https://files.catbox.moe/unp3kq.mp3" type="audio/mp3">
+      </audio>
+    </section>
+    <section id="video">
+      <h4>Video Elements</h4>
+      <p>Embedding video elements on the HTML page</p>
+      <video controls poster width="400px" height="320px" muted>
+        <source src="https://files.catbox.moe/2fupm3.mp4">
+      </video>
+    </section>
+  </section>
+  <hr>
+  <section id="form-el">
+    <h3>Sign Up Form</h3>
+    <form>
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email" placeholder="example@domain.com" required>
+      <br><br>
+      <label for="user">Username: </label>
+      <input type="text" id="user" name="user" placeholder="Enter a desired username" minlength="4"
+        autocomplete="email">
+      <br><br>
+      <label for="pass">Password: </label>
+      <input type="password" name="pass" id="pass" required placeholder="Password" minlength="8">
+      <br><br>
+      <label for="gender">Gender: </label>
+      <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <br>
+      <p>Receive Email Notifications?</p>
+      <label for="yes-notifications">Yes</label>
+      <input type="radio" name="yes-notifications" id="yes-notifications" required>
+      <label for="no-notifications">No</label>
+      <input type="radio" name="yes-notifications" id="no-notifications" required>
+      <br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+
+</html>
